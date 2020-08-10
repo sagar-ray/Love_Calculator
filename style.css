@@ -1,6 +1,8 @@
 body{
     position: relative; 
-    background: linear-gradient( to right, blueviolet, #333 ) ;
+    background: linear-gradient( #2f00ff70, #2600ff44 ), url('bg.jpg');
+    background-repeat:repeat;
+    background-size:108%; 
 }
 input{
     display: block;
@@ -34,14 +36,12 @@ input:nth-child(3):hover{
     left:0%;
     right:0%;
     width:320px;
-    background: #222;
+    background: rgba(34, 34, 34, 0.897);
     margin:50px auto;
     padding:20px;
     border-radius:10px;
     z-index:1;
 }
-
-
 #result{
     background:  #100e17 ;
     width:300px;
@@ -130,3 +130,23 @@ input:nth-child(3):hover{
     color:#888;
     cursor:pointer;
 }
+
+/*
+Responsive Design
+*/
+
+@media (max-width:500px){
+    #main{
+        width:250px;
+    }
+    input{
+        width:220px;
+    }
+    #result{
+        width:250px;
+        height:250px;
+    }
+    #alert{
+        width:250px;
+    }
+} 
