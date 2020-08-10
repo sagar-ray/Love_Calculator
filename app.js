@@ -9,6 +9,7 @@ document.querySelector("#alt-remove").addEventListener("click", function(){
 let Yname = document.querySelector("#Yname");
 let Pname = document.querySelector("#Pname");
 let submit = document.querySelector("#submit");
+let clear = document.querySelector("#clear");
 
 let alert_mes = document.querySelector("#alert p");
 
@@ -37,4 +38,9 @@ submit.addEventListener("click", function(){
 
     
 
+})
+
+clear.addEventListener("click", function(){
+    Yname.value='';
+    Pname.value='';
 })

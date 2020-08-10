@@ -1,6 +1,6 @@
 body{
     position: relative; 
-    background: linear-gradient( #2f00ff70, #2600ff44 ), url('bg.jpg');
+    background: linear-gradient( to right , #2f00ffe7, #2600ff73 ), url('bg.jpg');
     background-repeat:repeat;
     background-size:108%; 
 }
@@ -18,16 +18,21 @@ input{
 input:focus{
     outline:none;
 }
-input:nth-child(3){
+input[type='submit']{
    background: #222222 ;
+   width:45%;
    border-radius:50px;
+   float:left;
    border: 2px solid #4a4adb ;
    box-shadow: 0px 10px 10px 0px #171717;
    cursor:pointer;
    transition: all 0.4s;
    display: block;
 } 
-input:nth-child(3):hover{
+input#clear{
+    float:right !important;
+}
+input[type='submit']:hover{
     background:#4a4adb;
 }
 
@@ -149,4 +154,45 @@ Responsive Design
     #alert{
         width:250px;
     }
-} 
+}  
+
+#social{
+    position:fixed;
+    left:20px;
+    width:500px;
+    height:300px;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+}
+#social li{
+    list-style:none;
+    margin:10px 0px;
+}
+#social img{
+    width:40px;
+    color:#fff;
+}
+
+
+@media (max-width:667px){
+    #main{
+        width:250px;
+    }
+    input{
+        width:220px;
+    }
+    #result{
+        width:250px;
+        height:250px;
+    }
+    #alert{
+        width:250px;
+    }
+
+
+    #social{ 
+       display: none; 
+    }
+ 
+}  
